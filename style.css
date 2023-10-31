@@ -1,0 +1,512 @@
+/* reset */
+
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1rem 0;
+}
+
+.title { /* site name */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.title h1 { /* site name text */
+    margin: 0;
+}
+
+.title img { /* logo */
+    max-width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.main-bar ul { /* AΡΧΙΚΗ ΣΕΛΙΔΑ , ΚΑΤΗΓΟΡΙΕΣ etc */
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-bar li { /* AΡΧΙΚΗ ΣΕΛΙΔΑ , ΚΑΤΗΓΟΡΙΕΣ etc */
+    display: inline;
+    margin-right: 20px;
+}
+
+.main-bar a { /* AΡΧΙΚΗ ΣΕΛΙΔΑ , ΚΑΤΗΓΟΡΙΕΣ etc */
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+body {  /* Entire page */
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.main-bar{ /* nav bar backround */
+    background-color: #000000;
+
+}
+
+.main-bar a:hover { /* AΡΧΙΚΗ ΣΕΛΙΔΑ , ΚΑΤΗΓΟΡΙΕΣ etc */
+    color: rgb(204, 197, 197); 
+    
+
+}
+
+
+
+
+/* CONTACT US SECTION*/
+
+.legend fieldset {  
+    border: 2px solid #000000; /* border around field */
+    border-radius: 5px; 
+    padding: 15px;
+}
+
+.legend {  /* field placement to the page */
+    margin-bottom: 15%;
+    margin-top: 10%;
+}
+
+.legend legend { /* customisation of text on top ΕΙΣΑΓΩΓΗ ΣΤΟΙΧΕΙΩΝ ΕΠΙΚΟΙΝΩΝΙΑΣ */
+    font-size: 20px; 
+    font-weight: bold;
+    color: #000000; 
+    margin-bottom: 10px;
+}
+
+.legend input[type="text"], /* customisation of the field boxes */
+.legend input[type="email"],
+.legend input[type="tel"],
+.legend input[type="number"],
+.legend textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    resize:none;
+}
+
+.legend input[type="submit"] { /* customisation of button submit */
+    background-color: #000000; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.legend input[type="submit"]:hover { /* customisation of button submit */
+    background-color: #000000;
+}
+
+
+.legend input[type="submit"]:hover { /* customisation of button submit */
+    background-color: #292929; 
+}
+
+
+
+
+
+/* footer section */
+
+
+footer { /* main footer */
+    background-color: #1d1d1d;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-container { /* this allows the footer links to be on the right and not in a new line */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-content { /* same as before but for the collumns */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.footer-column { /* collumns set on the left */
+    flex: 1;
+    padding: 0 20px;
+    text-align: left;
+}
+
+footer h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+footer p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+footer img { 
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.footer-links {
+    margin-top: 20px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 14px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* categories section in categories.html */
+
+
+.categories { /* placement to the page */
+    margin-bottom: 15%;
+}
+
+
+
+
+.category { /* styling of the boxes */
+    list-style: none;
+    border: 2px solid #000000;
+    background-color: #f5f5f5;
+    padding: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right:5%;
+    margin-left:5%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    
+    
+    
+}
+
+.category:hover { /* category box gets bigger when mouse on top of it */
+    transform: scale(1.05);
+}
+
+.category ul { /* removal of dots because they are set as a list */
+    list-style: none;
+    padding: 0;
+}
+
+
+.subcategory {
+    padding: 5px;
+    font-weight: bold;
+    
+}
+
+.subcategory:hover {
+    border-color: #000000; /* Change the border color on hover */
+}
+
+.category a { /* text of subcategories */
+    text-decoration: none;
+    color: #333;
+    
+}
+
+.category img { /* image of each category */
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style for subcategory links */
+.subcategory a {
+    text-decoration: none;
+    color: #555;
+    font-weight: normal;
+    
+}
+
+
+.subcategory a:hover {
+    color: #000000;
+}
+
+
+
+/* main page section */
+
+.introduction { /* placement of welcome message */
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 15%;
+}
+
+
+.introduction p {
+    font-size: 20px; 
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+
+}
+
+/* font of title of website */
+@font-face {
+    font-family: 'MyFont';
+    src: url('fonts/Robot9000-MVxZx.ttf') format('woff2'); 
+  }
+
+.title h1 {
+    font-family: 'MyFont', sans-serif;
+}
+
+.about_us {
+    margin-bottom: 30%;
+}
+
+
+
+
+
+
+/* playstation categories */
+
+
+.playstation-listings {  /* making the listings as a grid */
+    
+    justify-content: center;
+  }
+  
+  .grid {
+    margin:15%;
+    display: grid; /* making the listings as a grid */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the column width as needed */
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .grid li {
+    border: 1px solid #ddd;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 15%;
+
+  }
+  
+  /* responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust for smaller screens */
+    }
+  }
+
+  /* cars category */
+
+  .car-listings {
+    margin-right:10%;
+    margin-left:10%;
+    margin-bottom:15%
+  }
+
+  .car-listings li {
+    border: 2px solid #000; /* You can customize the border properties */
+    padding: 10px; /* Add some padding to separate the content from the border */
+    margin: 10px 0; /* Add margin to space out the listings */
+    margin-top:2%;
+    list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ps5 */
+
+/* description of product */
+
+
+.item {
+    margin-top:8%;
+    margin-bottom:30%;
+    margin-left:10%;
+    margin-right:10%;
+}
+
+.item img {
+    margin-bottom:7%;
+    margin-top:7%;
+}
+
+/* table customisation of product specs */
+
+.item table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom:10%;
+    margin-top:10%;
+}
+
+.item th {
+    background-color: #f2f2f2;
+}
+
+.item th, td { /* each box has a border */
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.item tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.item .sub-1 { /* collumn name text */
+    font-weight: bold;
+}
+
+.item .sub-2 { /* colour of text of a specific category */
+    color: #3f86d1; /* Change the color as desired */
+}
+
+
+/* Style the image */
+.item #pic {
+    float: left;
+    margin-right: 20px;
+    border-radius: 10px; 
+}
+
+/* Style the paragraph text */
+p {
+    font-size: 18px;
+    line-height: 1.5;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+/* buy (contact) from seller section */
+/* using float we make the button appear next to the text */
+
+#border {
+    display: flex;
+    align-items: center;
+    border: 2px dashed #007bff; /* Dashed border style */
+    padding: 10px;
+}
+
+#buy {
+    flex: 1; /* Expand to fill the available space */
+    font-size: 16px;
+}
+
+#buy2 {
+    background-color: #007bff; /* Button background color */
+    color: white; /* Text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+/* Hover effect for the button */
+#buy2:hover {
+    background-color: #0056b3;
+}
+
+/* Reset default browser styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.about_us {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.about_us h1 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.about_us h2 {
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.about_us img {
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.about_us h3 {
+    font-size: 1em;
+    margin: 10px 0;
+}
+/* Style for the container of the images and text */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.image-container img {
+    display: inline;
+    margin: 10px;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
