@@ -688,6 +688,8 @@ body, h1, h2, h3, p, ul, li {
 }
 /* Style for the container of the images and text */
 .image-container {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: 20px 0;
@@ -735,4 +737,6 @@ a:link {
   .playstation-listings a:link{
     color:#292929;
   }
-
+  .item a:link{
+    color:#292929;
+  }
