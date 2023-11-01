@@ -185,71 +185,63 @@ footer img {
 /* categories section in categories.html */
 
 
-.categories { /* placement to the page */
-    margin-bottom: 15%;
+.categories {
+    display: grid;
+    padding:5%;
+    grid-template-columns: repeat(1, 2fr); /* Create 2 equal columns /
+    margin-bottom: 15%; / Use a fixed value like px instead of a percentage */
+
+
 }
 
+.category {
 
-
-
-.category { /* styling of the boxes */
+    margin-bottom:10%;
     list-style: none;
     border: 2px solid #000000;
     background-color: #f5f5f5;
     padding: 20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    margin-right:5%;
-    margin-left:5%;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s;
-    
-    
-    
+
 }
 
-.category:hover { /* category box gets bigger when mouse on top of it */
+.category:hover {
     transform: scale(1.05);
 }
 
-.category ul { /* removal of dots because they are set as a list */
+.category ul {
     list-style: none;
     padding: 0;
 }
 
-
 .subcategory {
     padding: 5px;
     font-weight: bold;
-    
 }
 
 .subcategory:hover {
-    border-color: #000000; /* Change the border color on hover */
+    border-color: #000000;
 }
 
-.category a { /* text of subcategories */
+.category a {
     text-decoration: none;
     color: #333;
-    
 }
 
-.category img { /* image of each category */
+.category img {
     border-radius: 50%;
     display: block;
     margin: 0 auto;
 }
 
-/* Style for subcategory links */
 .subcategory a {
     text-decoration: none;
     color: #555;
     font-weight: normal;
-    
 }
-
 
 .subcategory a:hover {
     color: #000000;
