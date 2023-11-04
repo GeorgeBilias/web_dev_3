@@ -512,9 +512,8 @@ a:active {
   margin-top: 10px;
 }
 
-/* Adjust the grid placement */
 .about_us h2:nth-child(odd) {
-  grid-column: 1;
+  grid-column: 2;
   grid-row: 1;
 }
 
@@ -523,7 +522,23 @@ a:active {
   grid-row: 2;
 }
 
-.about_us h2:nth-child(even) {
+.about_us h3:nth-child(odd) {
   grid-column: 2;
+  grid-row: 3;
+}
+
+.about_us h2:nth-child(even) {
+  grid-column: 1;
   grid-row: 1;
 }
+
+.about_us img:nth-child(even) {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.about_us h3:nth-child(even) {
+  grid-column: 1;
+  grid-row: 3;
+}
+
