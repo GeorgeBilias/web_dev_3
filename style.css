@@ -231,12 +231,12 @@ footer img {
   padding: 3%;
 }
 
-  .subcategory {
+.category {
   padding: 5px;
   font-weight: bold;  
 }
 
-.subcategory:hover {
+.category:hover {
   border-color: #000000; /* Change the border color on hover */
 }
 
@@ -252,14 +252,14 @@ footer img {
 }
 
 /* Style for subcategory links */
-.subcategory a {
+.category a {
   text-decoration: none;
   color: #555;
   font-weight: normal;  
 }
 
 
-.subcategory a:hover {
+.category a:hover {
   color: #000000;
 }
 
