@@ -378,6 +378,10 @@ footer img {
   color: #3f86d1; /* Change the color as desired */
 }
 
+.item a{
+  color: #1d1d1d;
+}
+
 
 /* Style the image */
 .item #pic {
