@@ -287,11 +287,9 @@ footer img {
 
 
 .playstation-listings {  /* making the listings as a grid */
-    
   justify-content: center;
-}
-
-.playstation-listings h2{
+  display: flex;
+  align-items: center;
   text-align: center;
 }
   
@@ -315,8 +313,7 @@ footer img {
 
   /* cars category */
 
-.car-listings {  /* making the listings as a grid */
-    
+.car-listings {  /* making the listings as a grid */  
   justify-content: center;
   display: flex;
   align-items: center;
