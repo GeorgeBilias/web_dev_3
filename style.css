@@ -318,11 +318,11 @@ footer img {
 .car-listings {  /* making the listings as a grid */
     
   justify-content: center;
-}
-
-.car-listings h2{
+  display: flex;
+  align-items: center;
   text-align: center;
 }
+
   
 .grid2 {
   margin:15%;
