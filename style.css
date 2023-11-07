@@ -290,6 +290,10 @@ footer img {
     
   justify-content: center;
 }
+
+.playstation-listings h2{
+  text-align: center;
+}
   
 .grid {
   margin:15%;
@@ -314,6 +318,10 @@ footer img {
 .car-listings {  /* making the listings as a grid */
     
   justify-content: center;
+}
+
+.car-listings h2{
+  text-align: center;
 }
   
 .grid2 {
