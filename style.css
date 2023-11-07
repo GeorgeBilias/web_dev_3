@@ -293,6 +293,8 @@ footer img {
   
 .grid {
   margin:15%;
+  display: grid; /* making the listings as a grid */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the column width as needed */
   gap: 20px;
   list-style: none;
   padding: 0;
@@ -315,7 +317,9 @@ footer img {
 }
   
 .grid2 {
-    margin:15%;
+  margin:15%;
+  display: grid; /* making the listings as a grid */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjust the column width as needed */
   gap: 20px;
   list-style: none;
   padding: 0;
