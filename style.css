@@ -15,7 +15,7 @@ body, h1, h2, h3, p, ul, li {
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #f7f7f7;
+  background-color: rgb(255,255,255);
 }
 
 header {
@@ -349,6 +349,21 @@ footer img {
   margin-bottom:30%;
   margin-left:10%;
   margin-right:10%;
+}
+
+.item div {
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Vertically center align the content */
+  
+}
+
+.item #views {
+  margin-right: 10px; /* Add some space between the image and text */
+  margin-bottom: 18px;
+}
+
+.item p {
+  margin: 0; /* Remove default margins on the <p> element */
 }
 
 .item img {
