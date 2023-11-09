@@ -416,6 +416,17 @@ footer img {
   border-radius: 10px;
 }
 
+.item del{
+  color: #a1a0a0;
+}
+
+.item .discount{
+  background-color: black;
+  padding: 5px;
+  color: white;
+  border-radius: 3px;
+}
+
 
 /* Style the paragraph text */
 p {
