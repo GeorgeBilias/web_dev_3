@@ -1,14 +1,11 @@
-/* reset */
-
-/* font of title of website */
-
+/* Added font of title of website */
 @font-face {
   font-family: 'MyFont';
   src: url('fonts/Robot9000-MVxZx.ttf') format('woff2'); 
   }
 
-/* Reset default browser styles */
-body, h1, h2, h3, p, ul, li {
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol,li {
   margin: 0;
   padding: 0;
 }
@@ -18,22 +15,20 @@ body {
   background-color: rgb(255,255,255);
 }
 
+/*HEADER*/
+
 header {
   text-align: center;
   background-color: #000000;
   color: #ffffff;
   padding: 1rem 0;
 }
-
+/*added display flex layout for title*/
 .title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 10%;
-}
-
-.title h1 {
-  margin: 0;
 }
 
 .title img {
@@ -67,24 +62,24 @@ header {
 /* CONTACT US SECTION*/
 
 .legend fieldset {  
-  border: 2px solid #000000; /* border around field */
+  border: 2px solid #000000;
   border-radius: 5px; 
   padding: 15px;
 }
 
-.legend {  /* field placement to the page */
+.legend {  
   margin-bottom: 15%;
   margin-top: 10%;
 }
 
-.legend legend { /* customisation of text on top ΕΙΣΑΓΩΓΗ ΣΤΟΙΧΕΙΩΝ ΕΠΙΚΟΙΝΩΝΙΑΣ */
+.legend legend {
   font-size: 20px; 
   font-weight: bold;
   color: #000000; 
   margin-bottom: 10px;
 }
 
-.legend input[type="text"], /* customisation of the field boxes */
+.legend input[type="text"], 
 .legend input[type="email"],
 .legend input[type="tel"],
 .legend input[type="number"],
@@ -98,7 +93,7 @@ header {
   resize:none;
 }
 
-.legend input[type="submit"] { /* customisation of button submit */
+.legend input[type="submit"] { 
   background-color: #000000; 
   color: white;
   border: none;
@@ -109,12 +104,12 @@ header {
 }
 
 
-.legend input[type="submit"]:hover { /* customisation of button submit */
+.legend input[type="submit"]:hover { 
   background-color: #000000;
 }
 
 
-.legend input[type="submit"]:hover { /* customisation of button submit */
+.legend input[type="submit"]:hover {
   background-color: #292929; 
 }
 
@@ -126,7 +121,7 @@ footer {
   padding: 30px 0;
   text-align: center;
 }
-  
+/* added grid collumns to the footer*/
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -135,7 +130,7 @@ footer {
   grid-template-columns: repeat(3, 1fr); /* Three columns in the footer */
   grid-gap: 20px; /* Adjust the gap between columns */
 }
-  
+/*Added flex layout of the footer content*/
 .footer-content {
   display: flex;
   justify-content: space-between;
@@ -143,7 +138,7 @@ footer {
   flex-wrap: wrap;
   flex: 1;
 }
-  
+
 .footer-column {
   flex: 1;
   text-align: left;
