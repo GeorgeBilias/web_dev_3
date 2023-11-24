@@ -9,20 +9,37 @@ body, h1, h2, h3, h4, h5, h6, p, ul, ol,li {
   margin: 0;
   padding: 0;
 }
-
+/*Adding the grid*/
 body {
   font-family: Arial, sans-serif;
   background-color: rgb(255,255,255);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+
 }
 
 /*HEADER*/
 
 header {
+  display: grid;
+  grid-area: header; /*setting the header for the grid*/
   text-align: center;
   background-color: #000000;
   color: #ffffff;
   padding: 1rem 0;
 }
+
+main {
+  display: grid;
+  grid-area: main; /*setting the main for the grid*/
+  padding: 1rem;
+}
+
 /*added display flex layout for title*/
 .title {
   display: flex;
@@ -116,6 +133,8 @@ header {
 /* footer section */
 
 footer {
+  display: grid;
+  grid-area: footer; /*setting the footer for the grid*/
   background-color: #1d1d1d;
   color: #fff;
   padding: 30px 0;
@@ -373,7 +392,8 @@ footer img {
 }
 
 .item .sub-2 { 
-  color: #3f86d1; /}
+  color: #3f86d1;
+}
 
 .item a{  
   color: #1d1d1d;
